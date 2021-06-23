@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\textheight}{24cm}
+\setlength{\textwidth}{16.5cm}
+%%%%%%%%% packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} % Include figure files
+\pagestyle{empty}
+\usepackage{wrapfig}
+\usepackage{lineno}
+
+\newcommand{\mrm}[1]{\ifmmode{\mathrm{#1}}\else{$\mathrm{#1}$}\fi}
+\newcommand{\erm}[1]{\mathrm{#1}} % in equation
+\newcommand{\trm}[1]{$\mathrm{#1}$} % in text
+
+\newcommand{\nEq}[2]{\begin{eqnarray}#1 \label{#2} \end{eqnarray}}
+
+\newcommand{\figIn}[4]{
+  \begin{figure}[htbp]
+   \centering
+	\includegraphics[width=#2\linewidth]{#1}\caption{#3}\label{#4}
+  \end{figure}
+}
+
+\newcommand{\dFigIn}[8]{
+    \begin{figure}[htbp]
+     \begin{minipage}{0.5\hsize}
+       \begin{center} \includegraphics[width= #2 \linewidth]{#1} \end{center} \caption{#3} \label{#4}
+     \end{minipage}
+     \begin{minipage}{0.5\hsize}
+       \begin{center} \includegraphics[width= #6 \linewidth]{#5} \end{center} \caption{#7} \label{#8}
+     \end{minipage}
+  \end{figure}
+}
+ 
+
+\newcommand{\pt}{\ifmmode{p_{\mathrm{T}}}\else{$p_{\mathrm{T}}$}\fi}
+\newcommand{\cme}{\ifmmode{\sqrt{s}}\else{$\sqrt{s}$}\fi}
+\newcommand{\cmeNN}{\ifmmode{\sqrt{s_{\mathrm{NN}}}}\else{$\sqrt{s_{\mathrm{NN}}}$}\fi}
+ 
+\newcommand{\eV}{\ifmmode{\mathrm{eV}}\else{$\mathrm{eV}$}\fi}
+\newcommand{\keV}{\ifmmode{\mathrm{keV}}\else{$\mathrm{keV}$}\fi}
+\newcommand{\MeV}{\ifmmode{\mathrm{MeV}}\else{$\mathrm{MeV}$}\fi}
+\newcommand{\GeV}{\ifmmode{\mathrm{GeV}}\else{$\mathrm{GeV}$}\fi}
+\newcommand{\TeV}{\ifmmode{\mathrm{TeV}}\else{$\mathrm{TeV}$}\fi}
+
+\newcommand{\raa}{\ifmmode{R_{\mathrm{AA}}}\else{$R_{\mathrm{AA}}$}\fi}
+
+\renewcommand{\refname}{}
+\linenumbers
+%%%%%%%%% header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+	Measurements of Nuclear Modification Factor of Inclusive Jet Measurements 
+	in Pb-Pb Collisions at $\sqrt{s_\mathrm{NN}} = 5.02~\mathrm{TeV}$ with LHC-ALICE
+\end{center}
+
+\input{contents/Abstract}
+
+
+\vspace{-10mm}
+\bibliography{ref}
+\bibliographystyle{junsrt} %参考文献出力スタイル
+
+\end{document}
