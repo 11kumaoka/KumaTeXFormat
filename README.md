@@ -10,9 +10,10 @@ Paperフォルダは筑波大の修論の仕様にしてありますが，
 Titleページも\maketilteではなく、適当なスペースを自身で設定しているため，
 各自の用途に合わせて設定しやすいかと思います．
 
-bibTexを有効にするためには以下のコマンドを実行してください．
-platex main\\
-pbibtex main\\
-platex main\\
-platex main\\
-dvipdfmx main\\
+bibTexを有効にするためには以下のコマンドを実行してください．<br>
+<br>
+platex main <br>
+pbibtex main <br>
+platex main <br>
+platex main <br>
+dvipdfmx main <br>
