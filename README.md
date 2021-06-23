@@ -11,8 +11,8 @@ Titleページも\maketilteではなく、適当なスペースを自身で設�
 各自の用途に合わせて設定しやすいかと思います．
 
 bibTexを有効にするためには以下のコマンドを実行してください．
-platex main
-pbibtex main
-platex main
-platex main
-dvipdfmx main
+platex main\\
+pbibtex main\\
+platex main\\
+platex main\\
+dvipdfmx main\\
