@@ -1,4 +1,3 @@
-/figure/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
@@ -18,14 +17,13 @@
 *.dvi
 *.xdv
 *-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+
 
 ## Generated if empty string is given at "Please type another file name for output:"
 *.pdf
 *.eps
+*.png
+*.jpg
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
